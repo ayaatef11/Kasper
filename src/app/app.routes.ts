@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import { Routes ,RouterModule} from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { DesingComponent } from './desing/desing.component';
@@ -30,6 +30,8 @@ export const routes: Routes = [
   {path:"stats",component:StatsComponent},
   {path:"subscribe",component:SubscribeComponent},
   {path:"video",component:VideoComponent},
-  { path: '', redirectTo: 'about', pathMatch: 'full' }, // Redirect default route must do it or yu'll get errors
-  { path: '**', redirectTo: 'about' } // Wildcard route (optional)
+  {path: '', redirectTo: 'about', pathMatch: 'full' }, // Redirect default route must do it or yu'll get errors
+  {path: '**', redirectTo: 'about' } // Wildcard route (optional)
 ];
+
+export class AppRoutingModule{}
