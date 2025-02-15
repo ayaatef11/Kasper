@@ -1,79 +1,30 @@
-   <!-- Start Portfolio -->
-   <div class="portfolio">
-    <div class="container">
-      <div class="main-heading">
-        <h2>Portfolio</h2>
-        <p>
-          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
-          tincidunt.
-        </p>
-      </div>
-      <ul class="shuffle">
-        <li class="active">All</li>
-        <li>App</li>
-        <li>Photo</li>
-        <li>Web</li>
-        <li>Print</li>
-      </ul>
+<!-- Start Portfolio -->
+<div class="portfolio">
+  <div class="container">
+    <div class="main-heading">
+      <h2>Portfolio</h2>
+      <p>
+        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+      </p>
     </div>
-    <div class="imgs-container">
-      <div class="box">
-        <img decoding="async"img decoding="async" [src]="path1" alt="" />
-        <div class="caption">
-          <h4>Awesome Image</h4>
-          <p>Photography</p>
-        </div>
-      </div>
-      <div class="box">
-        <img decoding="async" [src]="path2" alt="" />
-        <div class="caption">
-          <h4>Awesome Image</h4>
-          <p>Photography</p>
-        </div>
-      </div>
-      <div class="box">
-        <img decoding="async" [src]="path3" alt="" />
-        <div class="caption">
-          <h4>Awesome Image</h4>
-          <p>Photography</p>
-        </div>
-      </div>
-      <div class="box">
-        <img decoding="async" [src]="path4" alt="" />
-        <div class="caption">
-          <h4>Awesome Image</h4>
-          <p>Photography</p>
-        </div>
-      </div>
-      <div class="box">
-        <img decoding="async" [src]="path5" alt="" />
-        <div class="caption">
-          <h4>Awesome Image</h4>
-          <p>Photography</p>
-        </div>
-      </div>
-      <div class="box">
-        <img decoding="async" [src]="path6" alt="" />
-        <div class="caption">
-          <h4>Awesome Image</h4>
-          <p>Photography</p>
-        </div>
-      </div>
-      <div class="box">
-        <img decoding="async" [src]="path7" alt="" />
-        <div class="caption">
-          <h4>Awesome Image</h4>
-          <p>Photography</p>
-        </div>
-      </div>
-      <div class="box">
-        <img decoding="async" [src]="path8" alt="" />
-        <div class="caption">
-          <h4>Awesome Image</h4>
-          <p>Photography</p>
-        </div>
-      </div>
-    </div>
-    <a href="#" class="more">More</a>
+
+    <!-- Categories List -->
+    <ul class="shuffle">
+      <li *ngFor="let category of categories" class="active">{{ category }}</li>
+    </ul>
   </div>
-  <!-- End Portfolio -->
+
+  <!-- Images Grid -->
+  <div class="imgs-container">
+    <div class="box" *ngFor="let image of images">
+      <img decoding="async" [src]="image.src" alt="Portfolio Image" />
+      <div class="caption">
+        <h4>{{ image.title }}</h4>
+        <p>{{ image.category }}</p>
+      </div>
+    </div>
+  </div>
+
+  <a href="#" class="more">More</a>
+</div>
+<!-- End Portfolio -->

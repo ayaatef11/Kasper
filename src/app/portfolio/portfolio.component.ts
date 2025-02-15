@@ -1,9 +1,10 @@
+import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [],
+  imports: [NgFor],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css'
 })
