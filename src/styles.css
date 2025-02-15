@@ -91,6 +91,26 @@ ul {
 }
 /* End Components */
 @font-face {
-  font-family: ;
-  src: url();
+  font-family: 'FontAwesomeBrands';
+  src: url('assets/fonts/fa-brands-400.woff2') format('woff2'),
+       url('assets/fonts/fa-brands-400.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'FontAwesomeRegular';
+  src: url('assets/fonts/fa-regular-400.woff2') format('woff2'),
+       url('assets/fonts/fa-regular-400.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'FontAwesomeSolid';
+  src: url('assets/fonts/fa-solid-900.woff2') format('woff2'),
+       url('assets/fonts/fa-solid-900.ttf') format('truetype');
+  font-weight: 900;
+}
+.icon {
+  font-family: 'FontAwesomeSolid', sans-serif;
+  font-size: 24px;
 }
