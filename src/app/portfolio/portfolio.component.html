@@ -17,7 +17,7 @@
   <!-- Images Grid -->
   <div class="imgs-container">
     <div class="box" *ngFor="let image of images">
-      <img decoding="async" [src]="image.src" alt="Portfolio Image" />
+      <img decoding="async" [src]=image.src alt="Portfolio Image" />
       <div class="caption">
         <h4>{{ image.title }}</h4>
         <p>{{ image.category }}</p>
