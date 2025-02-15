@@ -6,7 +6,7 @@
     padding-bottom: var(--section-padding);
     height: 600px;
     position: relative;
-    background-image: url("/public/images/design-features.jpg");
+    background-image: url("/images/design-features.jpg");
     background-size: cover;
     display: flex;
     align-items: center;
