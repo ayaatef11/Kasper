@@ -30,7 +30,7 @@ export const routes: Routes = [
   {path:"stats",component:StatsComponent},
   {path:"subscribe",component:SubscribeComponent},
   {path:"video",component:VideoComponent},
-  {path: '', redirectTo: 'about', pathMatch: 'full' }, // Redirect default route must do it or yu'll get errors
+  {path: '', component:LandingComponent}, // Redirect default route must do it or yu'll get errors
   {path: '**', redirectTo: 'page-not-found' } // Wildcard route (optional)
 ];
 

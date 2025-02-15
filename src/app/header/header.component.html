@@ -2,12 +2,13 @@
 
 <header>
   <div class="container">
-    <a [routerLink]='["/about"]' routerLinkActive="router-link-active"  class="logo">
+    <a [routerLink]='["/landing"]' routerLinkActive="router-link-active"  class="logo">
       <img decoding="async" src="images/logo.png" alt="Logo" />
     </a>
     <nav>
-      <i class="fas fa-bars toggle-menu"></i>
-      <ul>
+  <!-- clickable menu item -->
+      <i class="fas fa-bars toggle-menu" (click)="toggleMenu()"></i>
+      <ul *ngIf="isMenuOpen">
         <li *ngFor="let link of navLinks">
           <a [routerLink]="['/' + link.path]" routerLinkActive="router-link-active">
             {{ link.label }}
