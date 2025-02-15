@@ -31,7 +31,7 @@ export const routes: Routes = [
   {path:"subscribe",component:SubscribeComponent},
   {path:"video",component:VideoComponent},
   {path: '', redirectTo: 'about', pathMatch: 'full' }, // Redirect default route must do it or yu'll get errors
-  {path: '**', redirectTo: 'about' } // Wildcard route (optional)
+  {path: '**', redirectTo: 'page-not-found' } // Wildcard route (optional)
 ];
 
 export class AppRoutingModule{}
