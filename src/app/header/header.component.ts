@@ -13,10 +13,12 @@ import { AppRoutingModule } from '../app.routes';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-ll="http://localhost:4200/about";
-path2="http://localhost:4200/services";
-path3="http://localhost:4200/portfolio";
-path4="http://localhost:4200/about";
-path5="http://localhost:4200/Pricing";
-path6="http://localhost:4200/contact";
+  navLinks = [
+    { path: '', label: 'Home' },
+    { path: 'services', label: 'Services' },
+    { path: 'portfolio', label: 'Portfolio' },
+    { path: 'about', label: 'About' },
+    { path: 'pricing', label: 'Pricing' },
+    { path: 'contact', label: 'Contact' }
+  ];
 }

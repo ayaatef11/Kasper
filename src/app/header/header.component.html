@@ -8,13 +8,13 @@
     <nav>
       <i class="fas fa-bars toggle-menu"></i>
       <ul>
-        <li><a class="button" [href]="ll"   routerLinkActive="router-link-active" >Home</a></li>
-        <li><a [href]="path2">Services</a></li>
-        <li><a [href]="path3" routerLinkActive="router-link-active" >Portfolio</a></li>
-        <li><a [href]="path4" routerLinkActive="router-link-active" >About</a></li>
-        <li><a [href]="path5" routerLinkActive="router-link-active" >Pricing</a></li>
-        <li><a [href]="path6" routerLinkActive="router-link-active" >Contact</a></li>
+        <li *ngFor="let link of navLinks">
+          <a [routerLink]="['/' + link.path]" routerLinkActive="router-link-active">
+            {{ link.label }}
+          </a>
+        </li>
       </ul>
+
       <div class="form">
         <i class="fas fa-search"></i>
       </div>
