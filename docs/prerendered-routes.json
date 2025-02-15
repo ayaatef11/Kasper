@@ -1,0 +1,19 @@
+{
+  "routes": [
+    "/",
+    "/about",
+    "/contact",
+    "/design",
+    "/footer",
+    "/header",
+    "/landing",
+    "/portfolio",
+    "/pricing",
+    "/quote",
+    "/services",
+    "/skills",
+    "/stats",
+    "/subscribe",
+    "/video"
+  ]
+}
