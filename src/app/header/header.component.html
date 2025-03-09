@@ -1,26 +1,17 @@
-<!-- Start Header -->
 
 <header>
   <div class="container">
     <a [routerLink]='["/landing"]' routerLinkActive="router-link-active"  class="logo">
-      <img decoding="async" src="images/logo.png" alt="Logo" />
+      <!-- <img decoding="async" src="images/dots.png" alt="Logo" /> -->
     </a>
-    <nav>
-  <!-- clickable menu item -->
-      <i class="fas fa-bars toggle-menu" (click)="toggleMenu()"></i>
-      <ul >
-        <!-- *ngIf="isMenuOpen" -->
-        <li *ngFor="let link of navLinks">
-          <a [routerLink]="['/' + link.path]" routerLinkActive="router-link-active">
-            {{ link.label }}
-          </a>
-        </li>
+    <nav class="navbar">
+      <ul>
+        <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+        <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+        <li><a routerLink="/services" routerLinkActive="active">Services</a></li>
+        <li><a routerLink="/portfolio" routerLinkActive="active">Portfolio</a></li>
       </ul>
-
-      <div class="form">
-        <i class="fas fa-search"></i>
-      </div>
-    </nav>
+  </nav>
   </div>
 </header>
-<!-- End Header -->

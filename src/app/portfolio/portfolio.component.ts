@@ -1,11 +1,12 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { VideoComponent } from "../video/video.component";
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, VideoComponent],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css'
 })

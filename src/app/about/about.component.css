@@ -4,6 +4,7 @@
     padding-top: var(--section-padding);
     overflow: hidden;
     text-align: center;
+    color: #00bcd4;
   }
   .about img {
     position: relative;

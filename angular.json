@@ -27,11 +27,12 @@
               }
             ],
             "styles": [
-              "src/styles.css",
-                "src/assets/css/all.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/css/all.min.css",
               "src/assets/css/normalize.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"            ],
-            "scripts": [],
+              "src/styles.css"
+                          ],
+            "scripts": ["src/assets/fonts/fa-brands-400.ttf"],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {

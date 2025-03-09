@@ -39,10 +39,11 @@
   @media (min-width: 1199px) {
     .portfolio .imgs-container .box {
       flex-basis: 25%;
+      padding-top: 15px;
     }
   }
   .portfolio .imgs-container .box img {
-    max-width: 100%;
+    max-width: 80%;
     transition: 0.3s;
   }
   .portfolio .imgs-container .box .caption {

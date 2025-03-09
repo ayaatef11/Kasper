@@ -1,6 +1,5 @@
 
 
-  /* Start Landing */
   .landing {
     min-height: 100vh;
     background-color: #1f2021;
@@ -84,4 +83,3 @@
     background-color: var(--main-color);
     border-color: var(--main-color);
   }
-  /* End Landing */

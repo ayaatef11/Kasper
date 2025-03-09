@@ -6,7 +6,7 @@ import { AppComponent } from '../app.component';
 import { CommonModule, NgIf,NgFor } from '@angular/common';
 import { AppRoutingModule } from '../app.routes';
 
-@Component({//it contains the metadata of the class
+@Component({
   selector: 'app-header',
   standalone: true,
   imports: [NgFor,RouterLink,CommonModule],
@@ -32,9 +32,9 @@ export class HeaderComponent {
 
   ];
 
-  isMenuOpen = false; // Track menu state
+  isMenuOpen = false;
 
   toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen; // Toggle menu visibility
+    this.isMenuOpen = !this.isMenuOpen; 
   }
 }
